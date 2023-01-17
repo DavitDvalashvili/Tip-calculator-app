@@ -1,44 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+<html|>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="images/favicon-32x32.png"/>
+    <title>Tip-calculator-app</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap">
+  </head>
+  <body>
+    <main>
+      <img id="logo" src="images/logo.svg" alt="logo">
+      <div class="calculator-form">
+        <div class="white-container">
+          <p>Bill</p>
+          <input placeholder="0" id="bill" type="number">
+          <p>Select Tip %</p>
+          <div class="grid-box">
+            <div class="percentage">5%</div>
+            <div class="percentage">10%</div>
+            <div class="percentage">15%</div>
+            <div class="percentage">25%</div>
+            <div class="percentage">50%</div>
+            <input placeholder="Custom" class="custom" type="number">
+          </div>
+          <p>Number of People</p>
+          <input placeholder="0" id="num-people" type="number">
+        </div>
+        <div class="green-container">
+          <div>
+            <div class="text-box">
+              <span>Tip Amount</span>
+              <span>/ person</span>
+            </div>
+            <span class="tip-amount">$0</span>
+          </div>
+          <div>
+            <div class="text-box">
+              <span>Total</span>
+              <span>/ person</span>
+            </div>
+            <span class="total-amount">$0</span>
+          </div>
+          <button>RESET</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"> </script>
+  </body>
 </html>

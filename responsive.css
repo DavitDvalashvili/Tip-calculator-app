@@ -1,0 +1,72 @@
+/* styling of >= 1024 px resolution */
+
+@media only screen and (min-width: 1024px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    main {
+        height: 62.2rem;
+    }
+    #logo {
+        margin: 0 auto 8.786rem auto;
+    }
+/* styling of calculator-form */
+  .calculator-form {
+    max-width: unset;
+    width: 90rem;
+    height: 48.1rem;
+    border-radius: 25px;
+    margin: 0 auto;
+    padding: 3.2rem;
+  }
+/* styling of white box */
+  .white-container {
+    width: 37.9rem;
+    margin: 1.3rem 1.6rem 1.6rem 1.6rem;
+    float: left;
+  }
+  #bill {
+    margin-bottom: 4rem;
+  }
+  #num-people {
+    margin-bottom: unset;
+  }
+  .custom {
+    padding: 0.6rem 1.5rem 0.6rem 1.4rem;
+  }
+
+/* styling of grid box and its container */
+  .grid-box {
+    margin: 1rem 0 4rem 0;
+    grid-template-columns: 11.7rem 11.7rem 11.7rem;
+    grid-template-rows: 4.8rem 4.8rem;
+    gap: 1.6rem 1.4rem;
+  }
+/* styling of green container and its elements */
+  .green-container {
+    max-width: unset;
+    height: 41.7rem;
+    width: 41.3rem;
+    float: right;
+    padding: 4rem;
+  }
+  .green-container > div:nth-of-type(1) {
+    margin-bottom: 2.5rem;
+  }
+  .total-amount, .tip-amount {
+    font-size: 4.8rem;
+    line-height: 7.1rem;
+    letter-spacing: -0.1rem;
+  }
+  .text-box span:nth-of-type(1) {
+    margin-top: 1.4rem;
+  }
+button {
+    margin-top: 12.2rem;
+    background-color: #0D686D;
+ }
+
+}
