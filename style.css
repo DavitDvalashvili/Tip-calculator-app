@@ -2,10 +2,8 @@
     /* colors */
     --white: #fff;
     --bc-light-green: #C5E4E7;
-    /* font-sizes */
-    --large: 2.4rem;
-    --medium: 2rem;
-    --small: 1.6rem;
+    --green: #00474B;
+    --cyan: #26C2AC;
     /* font-weight */
     --bold: 700;
 }
@@ -19,6 +17,9 @@ html {
     font-style: normal;
     font-size: 62.5%;
     background-color:  var(--bc-light-green);
+}
+p, #text-box, #bill, #num-people, .percentage, .percentage, .text-box span:nth-of-type(1), .text-box span:nth-of-type(2), .total-amount, .tip-amount, button {
+    font-weight: var(--bold);
 }
 
 #logo {
@@ -41,15 +42,13 @@ html {
 /* styling of white container */
 p, #text-box {
     font-size: 1.6rem;
-    font-weight: 700;
     line-height: 2.4rem;
     color: #5E7A7D;
     margin-bottom: 0.6rem;
 }
 #text-box {
-    justify-content: space-between;
-    flex-wrap: nowrap;
     display: flex;
+    justify-content: space-between;
     max-width: 100%;
 }
 #text-box span:nth-of-type(2) {
@@ -72,10 +71,9 @@ p, #text-box {
     border-radius: 0.5rem;
     padding: 0;
     text-align: right;
-    font-weight: 700;
     font-size: 2.4rem;
     line-height: 3.6rem;
-    color: #00474B;
+    color: var(--green);
     padding: 0.6rem 1.748rem 0.6rem 1.926rem;
 }
 /* styling of grid box and its elements */
@@ -87,9 +85,8 @@ p, #text-box {
     gap: 1.6rem 1.656rem;
 }
 .percentage {
-    background-color: #00474B;
+    background-color: var(--green);
     border-radius: 0.5rem;
-    font-weight: 700;
     font-size: 24px;
     line-height: 36px;
     color: var(--white);
@@ -97,7 +94,6 @@ p, #text-box {
     text-align: center;
 }
 .custom {   
-    font-weight: 700;
     font-size: 24px;
     line-height: 36px;
     background-color: #F3F9FA;
@@ -110,7 +106,7 @@ p, #text-box {
 .green-container {
     max-width: 32.7rem;
     height: 25.7rem;
-    background: #00474B;
+    background-color: var(--green);
     border-radius: 1.5rem;
     padding: 3.7rem 2.2rem 2.4rem 2.4rem;
 }
@@ -126,16 +122,14 @@ p, #text-box {
     display: inline-block;
 }
 .text-box span:nth-of-type(1) {
-    font-weight: 700;
     font-size: 1.6rem;
     line-height: 2.4rem;
-    color: white;
+    color: var(--white);
     display: block;
     text-align: left;
     margin-top: 0.2rem;
 }
 .text-box span:nth-of-type(2) {
-    font-weight: 700;
     font-size: 1.3rem;
     line-height: 1.9rem;
     color: #7F9D9F;
@@ -143,30 +137,28 @@ p, #text-box {
     text-align: left;
 }
 .total-amount, .tip-amount {
-    font-weight: 700;
     font-size: 3.2rem;
     line-height: 4.7rem;
-    color: #26C2AE;
+    color: var(--cyan);
 }
 button {
     margin-top: 3.3rem;
     width: 100%;
     height: 4.8rem;
-    background: #26C2AE;
+    background-color: var(--cyan);
     border-radius: 5px;
-    font-weight: 700;
     font-size: 20px;
     line-height: 30px;
-    color: #00474B;
+    color: var(gree);
 }
 /* styling of active page */
 .percentage:hover, button:hover {
     background-color: #9FE8DF;
-    color: #00474B;
+    color: var(--green);
     transition: all 0.6s ease-out;
     cursor: pointer;
 }
 input:focus {
-    outline: 2px solid #26C2AE;
+    outline: 2px solid var(--cyan);
     cursor: pointer;
 }

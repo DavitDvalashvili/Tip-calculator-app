@@ -41,8 +41,8 @@ document.querySelectorAll(".grid-box .percentage").forEach(element =>
             total.innerHTML = 0;
 
         } else  {
-            tip.innerHTML = Math.round(10*tipvalue1)/10;
-            total.innerHTML = Math.round(10*tipvalue1 * numPeople.value)/10;
+            tip.innerHTML = Math.round(100*tipvalue1)/100;
+            total.innerHTML = Math.round(100*tipvalue1 * numPeople.value)/100;
             customPercentage[0].value = null;
         }
     }) 
@@ -57,8 +57,8 @@ customPercentage[0].addEventListener("input", (event) => {
         tip.innerHTML = 0;
         total.innerHTML = 0;
     } else {
-        total.innerHTML = Math.round(10*tipvalue2 * numPeople.value)/10;
-        tip.innerHTML = Math.round(10*tipvalue2)/10;
+        total.innerHTML = Math.round(100*tipvalue2 * numPeople.value)/100;
+        tip.innerHTML = Math.round(100*tipvalue2)/100;
     }
 
 })
