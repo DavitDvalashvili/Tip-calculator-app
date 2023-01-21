@@ -39,13 +39,24 @@ html {
     margin: 0 0.8rem;
 }
 /* styling of white container */
-p {
+p, #text-box {
     font-size: 1.6rem;
     font-weight: 700;
     line-height: 2.4rem;
     color: #5E7A7D;
     margin-bottom: 0.6rem;
 }
+#text-box {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    display: flex;
+    max-width: 100%;
+}
+#text-box span:nth-of-type(2) {
+    color: #E17457;
+    display: none; 
+}
+
 #bill {
     background: url(images/icon-dollar.svg) no-repeat 1.926rem 1.687rem;
     background-size: 0.984rem 1.564rem;
